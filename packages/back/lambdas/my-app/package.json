@@ -10,8 +10,8 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@company/lib-dos": "2.0.0",
-    "@company/lib-uno": "1.0.0"
+    "@company/lib-dos": "workspace:*",
+    "@company/lib-uno": "workspace:*"
   },
   "peerDependencies": {
     "typescript": ">=4",

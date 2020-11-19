@@ -3,27 +3,13 @@ importers:
     specifiers: {}
   ../../packages/back/lambdas/my-app:
     dependencies:
-      '@company/lib-dos': 2.0.0
-      '@company/lib-uno': 1.0.0
+      '@company/lib-dos': 'link:../../libs/lib-dos'
+      '@company/lib-uno': 'link:../../libs/lib-uno'
     specifiers:
-      '@company/lib-dos': 2.0.0
-      '@company/lib-uno': 1.0.0
+      '@company/lib-dos': 'workspace:*'
+      '@company/lib-uno': 'workspace:*'
   ../../packages/back/libs/lib-dos:
     specifiers: {}
   ../../packages/back/libs/lib-uno:
     specifiers: {}
 lockfileVersion: 5.2
-packages:
-  /@company/lib-dos/2.0.0:
-    dev: false
-    peerDependencies:
-      typescript: '>=4'
-      webpack: '>=5'
-    resolution:
-      integrity: sha512-Kdw0lo6u3Zr38X87HeeQXKQYIjVanXaWLeXCE+LKiScyZTl6ltBtxhjY6q01/OcIqfBgIV24m94ttQseTVnynQ==
-  /@company/lib-uno/1.0.0:
-    dev: false
-    peerDependencies:
-      typescript: '>=4'
-    resolution:
-      integrity: sha512-8tUXCXDfVeCWGywhFQaUWH4XHUUWMzyheiBwVbDjIbWnViSGfEnkRqADQIz67zqO/15rhKpirL3KEftcfEpy1w==
