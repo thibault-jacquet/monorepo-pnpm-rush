@@ -1,0 +1,24 @@
+{
+  "name": "@company/husky",
+  "version": "1.0.0",
+  "description": "Husky Configuration for company project",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": ".huskyrc.json",
+  "files": [
+    ".huskyrc.json",
+    ".commitlintrc.json"
+  ],
+  "scripts": {
+    "build": "exit 0",
+    "clean": "exit 0",
+    "lint": "exit 0",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "~11.0.0",
+    "@commitlint/config-conventional": "~11.0.0",
+    "husky": "^4.3.0"
+  }
+}

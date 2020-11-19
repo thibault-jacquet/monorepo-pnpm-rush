@@ -389,6 +389,10 @@
      {
       "packageName": "@company/my-app",
       "projectFolder": "packages/back/lambdas/my-app"
+     },
+     {
+      "packageName": "@company/husky",
+      "projectFolder": "common/config/husky"
      }
     // {
     //   /**

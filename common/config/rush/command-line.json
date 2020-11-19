@@ -31,6 +31,15 @@
       "name": "clean",
       "safeForSimultaneousRushProcesses": false,
       "summary": "Clean the artifacts for all projects"
+    },
+    {
+      "allowWarningsInSuccessfulBuild": false,
+      "commandKind": "global",
+      "description": "Install & Run git-cz hook to create a commit by using handy generator",
+      "name": "commit",
+      "safeForSimultaneousRushProcesses": false,
+      "shellCommand": "node common/scripts/install-run.js git-cz@latest git-cz",
+      "summary": "Commit changes"
     }
     // {
     //   /**
