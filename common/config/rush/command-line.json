@@ -11,6 +11,27 @@
    * "rush my-global-command --help".
    */
   "commands": [
+     {
+      "allowWarningsInSuccessfulBuild": false,
+      "commandKind": "global",
+      "description": "This command will clean everything and run the whole build pipeline",
+      "name": "all",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "rush clean && rush rebuild && rush test && rush lint",
+      "summary": "Clean & Run the entire build pipeline (clean, build, test, lint) for all projects"
+    },
+    {
+      "allowWarningsInSuccessfulBuild": false,
+      "commandKind": "bulk",
+      "description": "This command will clean all the artifacts from all projects by calling 'clean' script in packages",
+      "enableParallelism": true,
+      "ignoreDependencyOrder": true,
+      "ignoreMissingScript": false,
+      "incremental": false,
+      "name": "clean",
+      "safeForSimultaneousRushProcesses": false,
+      "summary": "Clean the artifacts for all projects"
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.

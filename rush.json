@@ -50,7 +50,7 @@
      *
      * The default value is "local".
      */
-    // "pnpmStore": "local",
+    "pnpmStore": "local",
 
     /**
      * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
@@ -62,7 +62,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    // "strictPeerDependencies": true,
+    "strictPeerDependencies": true,
 
     /**
      * Configures the strategy used to select versions during installation.
@@ -76,7 +76,7 @@
      * After modifying this field, it's recommended to run "rush update --full" so that the package manager
      * will recalculate all version selections.
      */
-    // "resolutionStrategy": "fast",
+    "resolutionStrategy": "fewer-dependencies",
 
     /**
      * If true, then `rush install` will report an error if manual modifications
@@ -94,7 +94,7 @@
      *
      * The default value is false.
      */
-    // "preventManualShrinkwrapChanges": true,
+    "preventManualShrinkwrapChanges": true,
 
     /**
      * If true, then `rush install` will use the PNPM workspaces feature to perform the
@@ -172,7 +172,7 @@
    * To remove these restrictions, you could set projectFolderMinDepth=1
    * and set projectFolderMaxDepth to a large number.
    */
-  "projectFolderMinDepth": 1,
+  "projectFolderMinDepth": 2,
   "projectFolderMaxDepth": 4,
 
   /**
@@ -240,17 +240,17 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
      */
-    // "allowedEmailRegExps": [
-    //   "[^@]+@users\\.noreply\\.github\\.com",
-    //   "travis@example\\.org"
-    // ],
+    "allowedEmailRegExps": [
+      "[^@]+@users\\.noreply\\.github\\.com",
+      ".*@gmail\\.com"
+    ],
 
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
-    // "sampleEmail": "mrexample@users.noreply.github.com",
+    "sampleEmail": "xxxxx@gmail.com",
 
     /**
      * The commit message to use when committing changes during 'rush publish'.
@@ -259,7 +259,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    // "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
+    "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
   },
 
   "repository": {
@@ -278,19 +278,19 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    // "url": "https://github.com/microsoft/rush-example",
+    "url": "git@github.com:thibault-jacquet/monorepo-pnpm-rush.git",
 
     /**
      * The default branch name. This tells "rush change" which remote branch to compare against.
      * The default value is "master"
      */
-    // "defaultBranch": "master",
+    "defaultBranch": "master",
 
     /**
      * The default remote. This tells "rush change" which remote to compare against if the remote URL is
      * not set or if a remote matching the provided remote URL is not found.
      */
-    // "defaultRemote": "origin"
+    "defaultRemote": "origin"
   },
 
   /**

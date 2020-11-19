@@ -1,17 +1,22 @@
 {
   "name": "@company/lib-uno",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "http://localhost:4873"
-  },
-  "files": ["dist"],
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf coverage dist tsconfig.tsbuildinfo *.log"
+  },
+  "devDependencies": {
+    "rimraf": "~3.0.2"
   },
   "peerDependencies": {
     "typescript": ">=4"
+  },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
   }
 }
