@@ -1,0 +1,9 @@
+{
+    "extends": "./tsconfig.build.json",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@company/*": ["packages/back/0_libs/*/src"]
+        }
+    }
+}

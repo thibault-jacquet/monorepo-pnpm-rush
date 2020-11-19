@@ -1,0 +1,20 @@
+{
+  "name": "@company/my-app",
+  "sideEffects": [],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "prebuild": "rm -rf dist",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@company/lib-dos": "2.0.0",
+    "@company/lib-uno": "1.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4",
+    "webpack": ">=5"
+  }
+}

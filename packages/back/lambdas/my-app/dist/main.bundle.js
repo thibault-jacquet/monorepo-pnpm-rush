@@ -1,0 +1,1 @@
+(()=>{"use strict";const o="i want to upper then lower",e=o=>(o=>o.toLowerCase())(o);console.log((o=>o.toUpperCase())(o)),console.log(e(o)),console.log(e(o))})();

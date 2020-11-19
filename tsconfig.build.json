@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "declaration": true,
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "target": "ES5",
+        "removeComments": true,
+        "sourceMap": true,
+        "inlineSourceMap": false,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        // Strict Policies - Enable strict set to true all rules below
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        // Additional Linter Policies
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        // Typescript 4.1
+        // "noUncheckedIndexedAccess": true
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        // Experimental
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        // Advanced
+        "allowUnreachableCode": false,
+    }
+}
